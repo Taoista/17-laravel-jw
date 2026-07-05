@@ -60,10 +60,12 @@ php artisan jwt:secret
 
 php artisan migrate
 
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
 User::create([
-    'name' => 'Alberto',
-    'email' => 'alberto@email.com',
-    'password' => Hash::make('123456')
+    'name' => 'pep',
+    'email' => 'pepetruco@test.com',
+    'password' => Hash::make('7340458')
 ]);
 
 php artisan make:controller Api\AuthController
